@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>c2H Movie Point</title>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/contract.js"></script>
+  <script src="./js/video.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="embed-responsive embed-responsive-16by9">
+	<video id="videoid" controls width="600" height="400" >
+	  <source src="./video/bbbtrailer.webm" type="video/webm">
+	  <p>Your browser does not support the video tag.</p>
+	</video>
+  </div>
+</div>
+   <table id= "userdata" class="table table-hover table-bordered table-striped">
+      <tr>
+      <td>Userid : <span  id="displayid" class="id"></span></td>
+      <td>Videoid : <span  id="displayvideoid" class="id"></span></td>
+      <td>Video cost : <span  id="displayvideocost" class="id"></span></td>
+      <td>Balance: <span id="displaybalance" class="balance"></span></td>
+      </tr>
+    </table>  
+  
+</body>
+</html>
+
+
+

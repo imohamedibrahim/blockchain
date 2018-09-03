@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C2H DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+  <script src="./js/contract.js"></script>
+  <script src="./js/c2h.js"></script>
+</head>
+<body>
+<div class="container">
+        <h1>DAPP</h1>
+        <p>Unique id</p>
+        <form>
+                <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="id" type="text" class="form-control" name="id" placeholder="ID">
+                </div>
+                <br>
+                <a href="#" class="btn btn-primary">Enter</a>
+				<a href="" id="clear" class="btn btn-primary">Clear</a>
+        </form>
+</div>
+
+<div id="details" class="container">
+	<h1>Details</h1>
+      <table id= "userdata" class="table table-hover table-bordered table-striped">
+          <tr>
+            <th class="text-center">Customer ID </th>
+            <td id="CustomerId"></td>
+          </tr>
+          <tr>
+            <th class="text-center">Customer Name </th>
+            <td id="CustomerName"></td>
+          </tr>  
+          <tr>
+            <th class="text-center">Contact Detail </th>
+            <td id="CustomerPhoneNo"></td>
+          </tr>  
+          <tr>
+            <th class="text-center">Customer State </th>
+            <td id="CustomerState"></td>
+          </tr>  
+          <tr>
+            <th class="text-center">Customer Balance </th>
+            <td id="CustomerBalance"></td>
+          </tr>      
+     </table>
+
+</div>
+</body>
+</html>

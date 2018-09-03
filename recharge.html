@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C2H DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+  <script src="./js/contract.js"></script>
+  <script >
+	  $(document).ready(function() {
+	  $("#b").click(function(){
+	  contractInstance.addbalance(parseInt($('#id').val()),parseInt($('#balance').val()),{from: web3.eth.accounts[0]});
+	  alert("Balance added successfully");
+	});
+	});
+  </script>
+</head>
+<body>
+<div class="container">
+        <h1>RECHARGE ACCOUNT</h1>
+        <form>
+                <div class="input-group">
+		                <p>Unique id:</p>
+                                <input id="id" type="text" class="form-control" name="id" placeholder="ID">
+				<br><br>
+				<p>Balance to add:</p>
+				 <input id="balance" type="text" class="form-control" name="balance" >
+
+                </div>
+                <br>
+                <a id="b" href="#" class="btn btn-primary">Enter</a>
+        </form>
+</div>
+</body>
+</html>
